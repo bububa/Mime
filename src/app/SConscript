@@ -1,0 +1,22 @@
+#target = 'eva'
+libs = Split("""boost_regex 
+                boost_filesystem 
+                boost_system 
+                boost_program_options 
+                boost_date_time 
+                boost_thread 
+                json_linux-gcc-4.2.1_libmt 
+                botan 
+                mongoclient 
+                mmseg 
+                tidy 
+                ticppd
+                mime""")
+env = Environment(CC = ['g++', 'gcc'], CFLAGS = ['-g', '-Wall', '-pthread' '-D_REENTRANT'], CPPPATH=['#include', '#build', ], LIBS=libs, LIBPATH=["#build/libmime", "#build/libticppd"])
+Import ('libmime')
+
+target_test = 'test'
+test = env.Program(target_test, "test.cpp")
+Requires(test, libmime)
+
+#Export("airport eva inserter")

@@ -1,0 +1,5 @@
+DATA_PATH /Users/syd/Documents/Works/codes/Mime/data/
+MONGODB_HOST localhost:27017
+LOG_HOST localhost:27017
+DEBUG_LEVEL normal
+DICT_PATH /Users/syd/Documents/Works/codes/Mime/data/dict/

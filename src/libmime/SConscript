@@ -1,0 +1,18 @@
+import os
+import shutil
+
+target = 'libmime'
+src_files = Split("""Utils.cpp 
+                    Mongo.cpp 
+                    CosinSimilarity.cpp""")
+
+inc_files = Split("""Config.h 
+                    Utils.h 
+                    Mongo.h 
+                    CosinSimilarity.h""")
+
+env = Environment(CC = ['g++', 'gcc'], CFLAGS = ['-g', '-Wall', '-pthread' '-D_REENTRANT'], CPPPATH=['#include', ])
+
+libmime = env.StaticLibrary(target, src_files)
+
+Export ("libmime")

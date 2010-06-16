@@ -1,0 +1,4 @@
+SConscript([
+        'libmime/SConscript',
+        'app/SConscript',
+])
