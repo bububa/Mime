@@ -1,0 +1,30 @@
+A collaborative filtering tools library based on mongodb mapreduce.
+
+[REQUIREMENTS]
+*nix platform
+boost 1.42 ++
+jsoncpp
+botan
+mongodb
+libmmseg
+tiny
+
+[RELATED LIBS]
+libboost_regex
+libboost_filesystem
+libboost_system
+libboost_program_options
+libboost_date_time
+libboost_thread
+libjson_linux-gcc-4.2.1_libmt
+libbotan
+libmongoclient
+libmmseg
+libtiny
+libticppd
+
+[CONTACT]
+name: Syd Xu
+email: prof.syd.xu@gmail.com
+blog: http://syd.todayclose.com
+twitter: http://twitter.com/bububa/
